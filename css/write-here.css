@@ -1,0 +1,228 @@
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.write-here{
+    width: 100%;
+    display: inline-block;
+}
+.write-here label{
+    font-size: 80%;
+}
+.write-here input, 
+.write-here textarea, 
+.write-here select{
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.write-here input[type="submit"]{
+    cursor: pointer;
+    background: #4CA2CC;
+    color: #fff;
+    border: none;
+    margin: 10px 0;
+}
+.write-here .error{
+    border: 1px solid #E44646;
+    margin-bottom: 2px;
+}
+.write-here label.error{
+    width: 100%;
+    display: inline-block;
+    color: #E44646;
+    border: none;
+    margin-bottom: 10px;
+    font-size: 80%;
+}
+.write-here input[type="submit"]:disabled{
+    cursor: wait;
+}
+.timestamp-wrap label span{
+    display: none;
+}
+.timestamp-wrap input,
+.timestamp-wrap select{
+    width: auto;
+    display: inline-block;
+    padding: 2px;
+}
+.form-error,
+.form-success{
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 80%;
+    color: #E65151;
+    border: 1px solid #E65151;
+}
+.form-success{
+    color: #81BF67;
+    border: 1px solid #81BF67;
+}
+.write-here-dashboard-wrap{
+    width: 100%;
+    display: inline-block;
+}
+.write-here-dashboard ul{
+    padding: 0;
+    margin: 0;
+}
+.write-here-dashboard li{
+    margin-bottom: 20px;
+    padding: 10px 0;
+    list-style: none;
+    border-bottom: 1px solid #ddd;
+    display: inline-block;
+    width: 100%;
+}
+.wh-list{
+    width: auto;
+    max-width: 70%;
+    float: left;
+}
+.wh-edit{
+    width: auto;
+    float: right;
+    padding: 13px 0;
+}
+.wh-edit a{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 10px;
+    margin: 0 5px;
+    background: #F9B436;
+    font-size: 80%;
+}
+.wh-edit a:last-child{
+    background: #E44646;
+}
+.write-here-dashboard h2{
+    display: inline-block;
+    width: 100%;
+    margin: 10px 0 0 0;
+}
+.wh-post-meta{
+    font-size: 80%;
+    margin: 5px 0;
+}
+/* WP editor - WYSIWYG editor with media button */
+.wp-editor-wrap{
+    margin-bottom: 10px;
+}
+.wp-editor-container{
+    border: 1px solid #ddd !important;
+}
+.wp-editor-container textarea,
+#wh_content_ifr{
+    border: none;
+    height: 200px !important;
+}
+.quicktags-toolbar input{
+    width: auto;
+}
+/* Pagination on dashboard */
+.wh-pagenavi ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+.wh-pagenavi ul li{
+    display: inline-block;
+}
+.wh-pagenavi ul li a,
+.wh-pagenavi ul li .current{
+    padding: 5px 10px;
+    background: #ddd;
+}
+.wh-pagenavi ul li a{
+    cursor: pointer;
+}
+.wh-pagenavi ul li .current{
+    border: 1px solid #ddd;
+    background: #fff;
+}
+/* AJAX thing */
+#wh_img_preview{
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    width: 120px;
+    height: 120px;
+    display: none;
+    background-size: cover;
+    -moz-background-size: cover;
+    position: relative;
+}
+.prv_del{
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    background: #E44646;
+    color: #fff;
+    cursor: pointer;
+    padding: 0px;
+    font-size: 80%;
+}
+.ajax-top-btn{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin: 20px 0;
+    color: #fff;
+    background: #5EB34F;
+    cursor: pointer;
+    font-size: 140%;
+}
+#loading_ajax{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -25px;
+    z-index: 9;
+    display: none;
+    opacity: 0.9;
+    -moz-opacity: 0.9;
+    background: url(../img/load.gif) no-repeat center center;
+}
+.wh-form-on-ajax-page,
+.ajax-top-btn{
+    display: none;
+}
+#write_btn_ajax_bottom{
+    position: fixed;
+    width: 50px !important;
+    height: 50px;
+    padding: 0;
+    right: 10px;
+    bottom: 10px;
+    width: auto;
+    margin: 0;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+}
+.ajax-top-btn .dashicons{
+    font-size: 26px;
+    margin: 0 5px;
+}
+#write_btn_ajax_bottom .dashicons{
+    font-size: 40px;
+    margin: 6px 0 0 -18px;
+}
+.dis-no{
+    display: none !important;
+}
+.author-total-posts{
+    padding: 10px;
+    text-align: center;
+}
